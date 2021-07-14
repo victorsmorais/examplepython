@@ -1,6 +1,8 @@
 language: python
 python:
-  -3.9
+  - 3.9
+before_install:
+  - sudo apt-get -y install
 install:
   pip install -r dev-requirements.txt
 script:
