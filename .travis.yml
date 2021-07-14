@@ -1,7 +1,6 @@
 language: python
 python:
   -3.9.6
-  -3.8.10
 install:
   pip install -r dev-requirements.txt
 script:
