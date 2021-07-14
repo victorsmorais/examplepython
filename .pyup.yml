@@ -1,3 +1,5 @@
+update: all
 requirements:
   - Pipfile
   - Pipfile.lock
+schedule: "every day"
