@@ -98,7 +98,7 @@ def find_package_data(
 
 PACKAGE = "examplepython"
 NAME = PACKAGE
-DESCRIPTION = "Módeulo teste para PyTools"
+DESCRIPTION = "Módulo teste para PyTools"
 AUTHOR = "Victor Morais"
 AUTHOR_EMAIL = "victorsanmorais@gmail.com"
 URL = "https://github.com/victorsmorais/examplepython"
@@ -125,7 +125,7 @@ setup(
         "Programming Language :: Python :: 3.9",
         "Framework :: Pytest",
     ],
-    install_requires= [
+    install_requires=[
         'requests',
         'certifi',
         'idna',
