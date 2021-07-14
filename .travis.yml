@@ -1,8 +1,7 @@
 language: python
 python:
-  -3.9.6
+  -3.9-dev
 install:
   pip install -r dev-requirements.txt
 script:
   -flake8
-dist: Xenial
