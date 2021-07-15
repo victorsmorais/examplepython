@@ -128,6 +128,7 @@ setup(
         "Intended Audience :: Developers",
         "License :: OSI Approved :: GNU Affero General Public License v3 ",
         "Operating System :: OS Independent",
+        "Programming Language :: Python"
         "Programming Language :: Python :: 3.9",
         "Framework :: Pytest",
     ],
