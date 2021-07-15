@@ -1,7 +1,10 @@
 language: python
 python:
-  -3.9.6
+  - 3.9
+before_install:
+  - sudo apt-get -y install
 install:
-  pip install -r dev-requirements.txt
+  pip install -r requirements-dev.txt
 script:
-  -flake8
+  - flake8
+dist: "xenial"
