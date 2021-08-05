@@ -23,8 +23,12 @@ def test_remetente(remetente):
     assert remetente in resultado
 
 
+@pytest.mark.parametrize(
+    'remetente',
+    [' ', 'Victor']
+)
 def test_remetente_invalido(remetente):
-    enviador=Enviador()
+    enviador = Enviador()
     with pytest.raises(EmailInvalido):
         enviador.enviar(
             remetente,
