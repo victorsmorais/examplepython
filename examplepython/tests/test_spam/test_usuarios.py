@@ -1,27 +1,4 @@
-from examplepython.spam.modelos import Conexao, Sessao
-
-import pytest
-
-
-class Usuario:
-    def __init__(self, nome):
-        self.nome = nome
-        self.id = None
-
-
-@pytest.fixture
-def conexao():
-    conexao_obj = Conexao()
-    yield conexao_obj
-    conexao_obj.fechar()
-
-
-@pytest.fixture
-def sessao(conexao):
-    sessao_obj = conexao.gerar_sessao()
-    yield sessao_obj
-    sessao_obj.roll_back()
-    sessao_obj.fechar()
+from examplepython.spam.modelos import Usuario
 
 
 def test_salvar_usuario(sessao):
