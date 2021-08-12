@@ -16,7 +16,7 @@ def test_remetente(remetente):
     enviador = Enviador()
     resultado = enviador.enviar(
         remetente,
-        'victor.morais@graduacao.ie.ufrj.br',
+        'victorsanmorais@gmail.com',
         'teste do enviador de e-mails',
         'Se você recebeu esta mensagem, então o enviador está funcionando.'
     )
@@ -32,7 +32,7 @@ def test_remetente_invalido(remetente):
     with pytest.raises(EmailInvalido):
         enviador.enviar(
             remetente,
-            'victor.morais@graduacao.ie.ufrj.br',
+            'victorsanmorais@icloud.com',
             'teste do enviador de e-mails',
             'Se você recebeu esta mensagem, então o enviador está funcionando.'
         )
