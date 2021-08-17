@@ -4,7 +4,8 @@ python:
 before_install:
   - sudo apt-get -y install
 install:
-  pip install -r requirements-dev.txt codecov
+  - pip install -q pipenv codecov
+  - pipenv sync --dev
 script:
   - flake8
   - pytest examplepython --cov=examplepython
