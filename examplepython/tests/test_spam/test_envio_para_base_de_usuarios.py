@@ -19,7 +19,6 @@ from examplepython.spam.modelos import Usuario
 
     ]
 )
-
 def test_qte_de_spam(sessao, usuarios):
     for usuario in usuarios:
         sessao.salvar(usuario)

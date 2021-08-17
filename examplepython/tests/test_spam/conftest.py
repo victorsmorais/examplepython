@@ -3,12 +3,12 @@ import pytest
 from examplepython.spam.db import Conexao
 
 
-@pytest.fixture (scope= 'session')
+@pytest.fixture(scope='session')
 def conexao():
-    #setup
+    # setup
     conexao_obj = Conexao()
     yield conexao_obj
-    #teardown
+    # teardown
     conexao_obj.fechar()
 
 
