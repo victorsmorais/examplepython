@@ -1,13 +1,12 @@
 from unittest.mock import Mock
 
 import pytest
-from pytest_mock import mocker
 
 from examplepython import github_api
 
 
 @pytest.fixture
-def avatar_url():
+def avatar_url(mocker):
     resp_mock = Mock()
     url = 'https://avatars.githubusercontent.com/u/73318711?v=4'
     resp_mock.json.return_value = {
